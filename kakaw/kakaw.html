@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio André Chéchile proyecto final</title>
+  <!-- Enlace a la tipografía Inter desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="kakaw.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <h1>André Chéchile</h1>
+  <nav>
+    <a href="#hero"><a href="../index.html">INICIO</a></a>
+    <a href="#about">DESCRIPCIÓN</a>
+    <a href="#portfolio">EMPAQUES</a>
+    <a href="#contact">CONTACTO</a>
+  </nav>
+</header>
+
+<!-- ===== HERO / INICIO ===== -->
+<section id="hero">
+</section>
+
+<!-- ===== SOBRE MI ===== -->
+<section id="about">
+  <h2 class="project-title">
+    Chocolates KAKAW
+    <span>Diseño de packaging</span>
+  </h2>
+
+  <div class="star-grid">
+    <div class="star-card">
+      <h3>Situación</h3>
+      <p>
+        El proyecto busca crear una identidad visual para chocolates
+         artesanales que resalte su origen natural y cultural. La marca
+          "KAKAW" se inspira en la herencia del cacao en Mesoamérica,
+           uniendo tradición y diseño contemporáneo.
+      </p>
+    </div>
+
+    <div class="star-card">
+      <h3>Tarea</h3>
+      <p>
+       El objetivo fue crear una línea de envases que diferencie variedades de 
+       chocolate (amargo, blanco y sin azúcar) manteniendo una identidad unificada,
+        destacando la esencia del cacao para atraer diversos perfiles de consumidores.
+      </p>
+    </div>
+
+<div class="star-card expandable">
+  <button class="star-toggle">
+    <h3>Acción</h3>
+    <span class="toggle-icon">+</span>
+  </button>
+
+  <p class="star-summary">
+    Desarrollo de una identidad visual basada en origen ancestral,
+    simbología botánica y elegancia gráfica.
+  </p>
+
+  <div class="star-details">
+    <p>
+      La identidad se fundamenta en tres conceptos principales:
+      origen ancestral, simbología botánica y elegancia visual.
+    </p>
+
+    <ul>
+      <li><strong>Chocolate Amargo:</strong> vaina de cacao dorada sobre fondo bordó, con patrones mayas que evocan intensidad y respeto por la tierra.</li>
+      <li><strong>Chocolate Blanco:</strong> flor de vainilla en dorado sobre fondo claro, asociada a suavidad y refinamiento.</li>
+      <li><strong>Sin azúcar ni gluten:</strong> rama con hojas en celeste y dorado, símbolo de salud, equilibrio y confianza.</li>
+    </ul>
+
+    <p>
+      El patrón geométrico precolombino unifica la línea, acompañado
+      por tipografías clásicas y una paleta cromática armónica.
+    </p>
+  </div>
+</div>
+
+    <div class="star-card">
+      <h3>Resultado</h3>
+      <p>
+      "KAKAW" se presenta como una marca con identidad coherente y 
+      significativa, que conecta con las raíces del cacao y se adapta 
+      al mercado actual. Sus envases, con carácter propio, ofrecen una 
+      experiencia visual y sensorial, celebrando el legado del chocolate.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PORTAFOLIO ===== -->
+<section id="portfolio">
+  <h2>CHOCOLATE</h2>
+  <div class="grid">
+    <!-- Cada div.work representa un proyecto. data-project se usa para JS -->
+    <div class="work" data-project="1"><img src="img/amargo.png" alt="Proyecto 1"><p> CHOCOLATE AMARGO</p></div>
+    <div class="work" data-project="2"><img src="img/blanco.png" alt="Proyecto 2"><p>CHOCOLATE BLANCO</p></div>
+    <div class="work" data-project="3"><img src="img/diabetico.png" alt="Proyecto 3"><p>CHOCOLATE PARA DIABETICOS</p></div>
+  </div>
+</section>
+
+
+
+<!-- ===== CONTACTO ===== -->
+<section id="contact">
+  <h2>Contacto</h2>
+  <form action="https://formspree.io/f/tu_form_id" method="POST">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2025 Tu Nombre | Diseñador Gráfico</p>
+</footer>
+
+<!-- ===== MODAL PARA CARRUSEL ===== -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="carousel">
+      <button class="prev">&#10094;</button>
+      <img id="carousel-img" src="" alt="">
+      <button class="next">&#10095;</button>
+    </div>
+
+    <p id="project-description"></p>
+
+    <!-- 🔹 BOTÓN QUE LLEVA A OTRA PÁGINA -->
+    <a id="project-link" href="#" class="open-project-btn" target="_blank">Ver proyecto completo</a>
+  </div>
+</div>
+
+
+<!-- JS -->
+<script src="kakaw.js"></script>
+</body>
+</html>
