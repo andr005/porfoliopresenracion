@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio André Chéchile proyecto final</title>
+  <!-- Enlace a la tipografía Inter desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="afiches.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <h1>André Chéchile</h1>
+<nav>
+  <a href="../index.html">INICIO</a>
+  <a href="#about">DESCRIPCIÓN</a>
+  <a href="#portfolio">TRABAJOS</a>
+  <a href="#contact">CONTACTO</a>
+</nav>
+</header>
+
+<!-- ===== HERO / INICIO ===== -->
+<section id="hero">
+</section>
+
+<!-- ===== SOBRE MI ===== -->
+<section id="about">
+
+<h2 class="section-title">
+  Identidad cultural en sistema gráfico
+  <span>Serie de afiches para el CLE – ANEP</span>
+</h2>
+
+  <div class="about-grid">
+    <div class="about-item">
+      <h3>Situación</h3>
+      <p>
+        Diseño de una serie de afiches urbanos para el CLE de ANEP con el fin
+        de promover la inscripción a cursos de idiomas.
+      </p>
+    </div>
+
+    <div class="about-item">
+      <h3>Tarea</h3>
+      <p>
+        Representar la identidad cultural de Italia, Francia, Alemania y Brasil
+        dentro de un sistema visual unificado.
+      </p>
+    </div>
+
+    <div class="about-item">
+      <h3>Acción</h3>
+      <p>
+        Investigación cultural, selección de animales simbólicos y desarrollo
+        gráfico inspirado en Ikko Tanaka mediante geometría y síntesis visual.
+      </p>
+    </div>
+
+    <div class="about-item">
+      <h3>Resultado</h3>
+      <p>
+        Serie coherente, clara y visualmente impactante que comunica identidad,
+        cultura y valores de cada país.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PORTAFOLIO ===== -->
+<section id="portfolio">
+  <h2>AFICHES</h2>
+  <div class="grid">
+    <!-- Cada div.work representa un proyecto. data-project se usa para JS -->
+    <div class="work" data-project="1"><img src="img/brasil.png" alt="Proyecto 1"><p>Portugues</p></div>
+    <div class="work" data-project="2"><img src="img/italia.png" alt="Proyecto 2"><p>Italiano</p></div>
+    <div class="work" data-project="3"><img src="img/francia.png" alt="Proyecto 3"><p>Frances</p></div>
+    <div class="work" data-project="4"><img src="img/alemania.png" alt="Proyecto 3"><p>Aleman</p></div>
+
+  </div>
+</section>
+
+
+
+<!-- ===== CONTACTO ===== -->
+<section id="contact">
+  <h2>Contacto</h2>
+  <form action="https://formspree.io/f/tu_form_id" method="POST">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2025 Tu Nombre | Diseñador Gráfico</p>
+</footer>
+
+<!-- ===== MODAL PARA CARRUSEL ===== -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="carousel">
+      <button class="prev">&#10094;</button>
+      <img id="carousel-img" src="" alt="">
+      <button class="next">&#10095;</button>
+    </div>
+    <p id="project-description"></p>
+  </div>
+</div>
+
+<!-- JS -->
+ <script src="/js/script.js"></script>
+<script src="afiches.js"></script>
+</body>
+</html>
