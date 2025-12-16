@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>André Chéchile · Diseño Gráfico</title>
+
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <h1>André Chéchile</h1>
+  <nav>
+    <a href="#hero">Inicio</a>
+    <a href="#about">Sobre mí</a>
+    <a href="#portfolio">Trabajos</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-text">
+    <h2>Diseñador gráfico</h2>
+    <p>Identidad visual · Editorial · Comunicación visual</p>
+  </div>
+</section>
+
+<!-- ===== SOBRE MI ===== -->
+<section id="about">
+  <h2>Sobre mí</h2>
+
+  <p class="about-intro">
+    Soy diseñador gráfico con un enfoque generalista, orientado a construir
+    soluciones visuales claras, conceptuales y funcionales. Trabajo desde el
+    análisis del problema hasta el resultado final, adaptando el lenguaje visual
+    a distintos formatos y contextos.
+  </p>
+
+  <div class="skills">
+    <div class="skill-item">
+      <h3>Qué hago</h3>
+      <p>Identidad visual, afiches, editorial, señalética y piezas gráficas.</p>
+    </div>
+
+    <div class="skill-item">
+      <h3>Cómo trabajo</h3>
+      <p>Investigación, concepto, experimentación y desarrollo visual.</p>
+    </div>
+
+    <div class="skill-item">
+      <h3>Herramientas</h3>
+      <p>Photoshop · Illustrator · InDesign</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PORTFOLIO ===== -->
+<section id="portfolio">
+  <h2>Trabajos</h2>
+
+  <div class="grid">
+    <article class="work" data-project="1">
+      <img src="img/afiches/italia.png" alt="Afiches urbanos">
+      <p>Comunicación urbana</p>
+    </article>
+
+    <article class="work" data-project="2">
+      <img src="img/portadas/Nuevo Robinson.png" alt="Portadas editoriales">
+      <p>Diseño editorial</p>
+    </article>
+
+    <article class="work" data-project="3">
+      <img src="img/kakaw/cajas.png" alt="Packaging">
+      <p>Packaging</p>
+    </article>
+
+    <article class="work" data-project="4">
+      <img src="img/mentis/caratulamentis.png" alt="Identidad visual">
+      <p>Identidad visual</p>
+    </article>
+
+    <article class="work" data-project="5">
+      <img src="img/señaletica/señaletica.png" alt="Señalética">
+      <p>Sistemas de señalización</p>
+    </article>
+
+    <article class="work" data-project="6">
+      <img src="img/trabajos/dune.png" alt="Exploraciones gráficas">
+      <p>Exploraciones gráficas</p>
+    </article>
+  </div>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section id="contact">
+  <h2>Contacto</h2>
+
+  <form action="https://formspree.io/f/tu_form_id" method="POST">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2025 André Chéchile · Diseño Gráfico</p>
+</footer>
+
+<!-- ===== MODAL ===== -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-content">
+
+
+    <!-- IMAGEN -->
+    <div class="carousel">
+      <img id="carousel-img" src="" alt="">
+    </div>
+
+    <!-- INFO -->
+    <div class="modal-info">
+      <p id="project-description"></p>
+      <a id="project-link" href="#" class="open-project-btn" target="_blank">
+        Ver proyecto completo
+      </a>
+    </div>
+
+    <!-- CONTROLES -->
+    <div class="carousel-controls">
+      <button class="prev" aria-label="Imagen anterior">&#10094;</button>
+      <button class="next" aria-label="Imagen siguiente">&#10095;</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
