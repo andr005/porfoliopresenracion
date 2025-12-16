@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio André Chéchile proyecto final</title>
+  <!-- Enlace a la tipografía Inter desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mentis.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <h1>André Chéchile</h1>
+  <nav>
+    <a href="#hero"><a href="../index.html">INICIO</a></a>
+    <a href="#about">DESCRIPCIÓN</a>
+    <a href="#portfolio">TRABAJO</a>
+    <a href="#contact">CONTACTO</a>
+  </nav>
+</header>
+
+<!-- ===== HERO / INICIO ===== -->
+<section id="hero">
+</section>
+
+<!-- ===== SOBRE MI ===== -->
+<section class="section star-section">
+  <h2 class="project-title">
+    Mentis Clara
+    <span>Diseño de identidad</span>
+  </h2>
+
+  <div class="star-grid">
+    <div class="star-card">
+      <h3>Situación</h3>
+      <p>
+        Creciente demanda de apoyo emocional en comunidades sin acceso
+        constante a recursos terapéuticos.
+      </p>
+    </div>
+
+    <div class="star-card">
+      <h3>Tarea</h3>
+      <p>
+        Diseñar un programa psicoeducativo accesible, seguro y replicable,
+        con supervisión profesional.
+      </p>
+    </div>
+
+    <div class="star-card">
+      <h3>Acción</h3>
+      <p>
+        Desarrollo de talleres, protocolos clínicos y una identidad visual
+        que comunique confianza y calidez.
+      </p>
+    </div>
+
+    <div class="star-card">
+      <h3>Resultado</h3>
+      <p>
+        Implementación exitosa de talleres grupales y consolidación
+        de una identidad institucional clara.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section brand-section">
+  <h2 class="section-title">
+    Sobre Mentis Clara
+    <span>Propósito e identidad</span>
+  </h2>
+
+  <div class="brand-grid">
+    <div class="brand-card">
+      <h3>Misión</h3>
+      <p>
+        Ofrecer espacios psicoeducativos de contención emocional y escucha activa,
+        orientados a la comunidad, guiados por estudiantes avanzados de Psicología
+        con supervisión profesional. Promovemos la salud mental desde un enfoque
+        humano, accesible y preventivo.
+      </p>
+    </div>
+
+    <div class="brand-card">
+      <h3>Visión</h3>
+      <p>
+        Ser una red de apoyo emocional reconocida por su compromiso ético,
+        calidez humana y capacidad de generar impacto en la comunidad.
+        Aspiramos a fortalecer el vínculo entre formación profesional y
+        necesidades reales de las personas.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- ===== PORTAFOLIO ===== -->
+<div class="logo">
+  <img src="img/logoo.png" alt="">
+</div>
+
+<section id="portfolio">
+  <h2 class="section-title">
+    Aplicaciones del sistema
+    <span>Implementación de la identidad visual</span>
+  </h2>
+
+  <div class="grid">
+
+    <div class="work" data-project="1">
+      <img src="img/camisa.png" alt="Indumentaria institucional">
+      <p class="work-title">Indumentaria institucional</p>
+      <p class="work-desc">Aplicación del sistema en prendas de uso cotidiano.</p>
+    </div>
+
+    <div class="work" data-project="2">
+      <img src="img/fachada.png" alt="Sede institucional">
+      <p class="work-title">Sede</p>
+      <p class="work-desc">Implementación del sistema en fachada y espacio físico.</p>
+    </div>
+
+    <div class="work" data-project="3">
+      <img src="img/talleres.png" alt="Talleres">
+      <p class="work-title">Talleres</p>
+      <p class="work-desc">Adaptación de la identidad para espacios comunitarios.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===== CONTACTO ===== -->
+<section id="contact">
+  <h2>Contacto</h2>
+  <form action="https://formspree.io/f/tu_form_id" method="POST">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2025 Tu Nombre | Diseñador Gráfico</p>
+</footer>
+
+<!-- ===== MODAL PARA CARRUSEL ===== -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="carousel">
+      <button class="prev">&#10094;</button>
+      <img id="carousel-img" src="" alt="">
+      <button class="next">&#10095;</button>
+    </div>
+
+    <p id="project-description"></p>
+
+    <!-- 🔹 BOTÓN QUE LLEVA A OTRA PÁGINA -->
+    <a id="project-link" href="#" class="open-project-btn" target="_blank">Ver proyecto completo</a>
+  </div>
+</div>
+
+
+<!-- JS -->
+<script src="mentis.js"></script>
+</body>
+</html>
