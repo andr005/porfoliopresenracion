@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio André Chéchile proyecto final</title>
+  <!-- Enlace a la tipografía Inter desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="otros.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <h1>André Chéchile</h1>
+<nav>
+  <a href="../index.html">INICIO</a>
+  <a href="#about">DESCRIPCIÓN</a>
+  <a href="#portfolio">TRABAJOS</a>
+  <a href="#contact">CONTACTO</a>
+</nav>
+</header>
+
+<!-- ===== HERO / INICIO ===== -->
+<section id="hero">
+</section>
+
+<!-- ===== SOBRE MI ===== -->
+<section id="about">
+
+   <h2 class="section-title">
+  Trabajos
+  <span>Proyectos independientes</span>
+</h2>
+
+<h3 id="project-title"></h3>
+
+  <p class="about-text">
+    Este conjunto de piezas reúne proyectos de distintas temáticas —cine,
+    videojuegos y teatro— que muestran mi capacidad para adaptarme a
+    universos visuales diversos.
+    <br><br>
+    Aunque no comparten un mismo género, todos reflejan un enfoque común:
+    utilizar el diseño gráfico como herramienta para comunicar atmósferas,
+    emociones e historias mediante imágenes claras, estéticas y memorables.
+  </p>
+</section>
+
+<!-- ===== PORTAFOLIO ===== -->
+<section id="portfolio">
+  <h2>TRABAJOS</h2>
+  <div class="grid">
+    <!-- Cada div.work representa un proyecto. data-project se usa para JS -->
+    <div class="work" data-project="1"><img src="img/dune/cuarto.png" alt="Proyecto 1"><p>DUNE</p></div>
+    <div class="work" data-project="2"><img src="img/juego/tercerjuego.png" alt="Proyecto 2"><p>ZAR´KAEL</p></div>
+    <div class="work" data-project="3"><img src="img/fantasma/cuartofantasma.png" alt="Proyecto 3"><p>El fantasma de la opera</p></div>
+    <div class="work" data-project="4"><img src="img/animacion/tercer.png" alt="Proyecto 4"><p>Publicación</p></div>
+
+
+  </div>
+</section>
+
+
+
+<!-- ===== CONTACTO ===== -->
+<section id="contact">
+  <h2>Contacto</h2>
+  <form action="https://formspree.io/f/tu_form_id" method="POST">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2025 Tu Nombre | Diseñador Gráfico</p>
+</footer>
+
+<!-- ===== MODAL PARA CARRUSEL ===== -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="carousel">
+      <button class="prev">&#10094;</button>
+      <img id="carousel-img" src="" alt="">
+      <button class="next">&#10095;</button>
+    </div>
+
+    <p id="project-description"></p>
+
+    <!-- 🔹 BOTÓN QUE LLEVA A OTRA PÁGINA -->
+    <a id="project-link" href="#" class="open-project-btn" target="_blank">Ver proyecto completo</a>
+  </div>
+</div>
+
+
+<!-- JS -->
+<script src="otro.js"></script>
+</body>
+</html>
