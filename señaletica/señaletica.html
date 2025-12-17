@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio André Chéchile proyecto final</title>
+  <!-- Enlace a la tipografía Inter desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="señaletica.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <h1>André Chéchile</h1>
+  <nav>
+    <a href="#hero"><a href="../index.html">INICIO</a></a>
+    <a href="#about">DESCRIPCIÓN</a>
+    <a href="#portfolio">TIPO DE SEÑALETICA</a>
+    <a href="#contact">CONTACTO</a>
+  </nav>
+</header>
+
+<!-- ===== HERO / INICIO ===== -->
+<section id="hero">
+</section>
+
+<!-- ===== SOBRE MI ===== -->
+  </h2>
+
+  <div class="star-grid">
+
+    <div class="star-card">
+      <h3>Situación</h3>
+      <p>
+        El Yacht Club Paysandú atravesaba un proceso de crecimiento institucional,
+        pero su señalética presentaba deterioro, incoherencia visual y baja legibilidad,
+        generando confusión en socios y visitantes.
+      </p>
+    </div>
+
+    <div class="star-card">
+      <h3>Tarea</h3>
+      <p>
+        Desarrollar un sistema integral de señalética que unificara la identidad visual,
+        mejorara la orientación interna y se adaptara al entorno náutico.
+      </p>
+    </div>
+
+    <div class="star-card">
+      <h3>Acción</h3>
+      <p>
+        Se realizó un relevamiento del espacio y usuarios, definiendo un partido
+        conceptual y diseñando categorías de señalética con materiales resistentes
+        y un lenguaje visual unificado.
+      </p>
+    </div>
+
+    <div class="star-card">
+      <h3>Resultado</h3>
+      <p>
+        Se obtuvo un sistema claro, funcional y coherente que optimiza la circulación,
+        refuerza la identidad institucional y permite futuras ampliaciones.
+      </p>
+    </div>
+
+  </div>
+</section>
+<!-- ===== PORTAFOLIO ===== -->
+<section id="portfolio">
+<h2 class="section-title">
+  Tipos de señalética
+  <span>Categorización del sistema</span>
+</h2>
+  <div class="grid">
+    <!-- Cada div.work representa un proyecto. data-project se usa para JS -->
+    <div class="work" data-project="1"><img src="img/nomencladora/NOMENCLADORA.png" alt="Proyecto 1"><p>Nomencladoras</p></div>
+    <div class="work" data-project="2"><img src="img/direccionales/DIRECCIONALES.png" alt="Proyecto 2"><p>Direcionales</p></div>
+    <div class="work" data-project="3"><img src="img/reguladoras/REGULADORAS.png" alt="Proyecto 3"><p>Reguladoras</p></div>
+    <div class="work" data-project="4"><img src="img/informativas/INFORMATIVA.png" alt="Proyecto 3"><p>Informativas</p></div>
+
+  </div>
+</section>
+<!-- ===== CONTACTO ===== -->
+<section id="contact">
+  <h2>Contacto</h2>
+  <form action="https://formspree.io/f/tu_form_id" method="POST">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2025 Tu Nombre | Diseñador Gráfico</p>
+</footer>
+
+<!-- ===== MODAL PARA CARRUSEL ===== -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="carousel">
+      <button class="prev">&#10094;</button>
+      <img id="carousel-img" src="" alt="">
+      <button class="next">&#10095;</button>
+    </div>
+
+    <p id="project-description"></p>
+
+    <!-- 🔹 BOTÓN QUE LLEVA A OTRA PÁGINA -->
+    <a id="project-link" href="#" class="open-project-btn" target="_blank">Ver proyecto completo</a>
+  </div>
+</div>
+
+
+<!-- JS -->
+<script src="señaletica.js"></script>
+</body>
+</html>
